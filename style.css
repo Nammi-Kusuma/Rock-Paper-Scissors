@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #081310;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem;
+}
+
+.option {
+    height: 10rem;
+    width: 10rem;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option:hover {
+    background-color: #081b31;
+}
+
+img {
+    height: 9.25rem;
+    width: 9.25rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (max-width: 720px) {
+    .option {
+        padding: 0 0.25rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .option {
+        height: 7rem;
+        width: 7rem;
+        padding: 0;
+    }
+
+    img {
+        height: 6.5rem;
+        width: 6.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user, #comp {
+    font-size: 3rem;
+}
+
+@media (max-width: 650px) {
+    .board {
+        font-size: 1.5rem;
+    }
+
+    #user, #comp {
+        font-size: 2.5rem;
+    }
+}
+
+.msg-container {
+    margin-top: 5rem;
+}
+
+#msg {
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.newGame {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.btn {
+    font-size: 1rem;
+    display: inline;
+    /* color: white; */
+    /* background-color: #081b31; */
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px black;
+}
+
+@media (max-width: 800px) {
+    #msg {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 650px) {
+    #msg {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .option {
+        height: 5rem;
+        width: 5rem;
+        padding: 0 0.25;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .option:hover {
+        background-color: white;
+        opacity: 0.7;
+    }
+}
